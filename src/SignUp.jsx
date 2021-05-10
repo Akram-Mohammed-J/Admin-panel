@@ -84,7 +84,7 @@ const SignUp = () => {
       .then((res) => {
         if (res.status == 201) {
           sessionStorage.setItem("token", res.accessToken);
-          history.push("/Dashboard");
+          history.push("/Admin");
         } else {
           return Promise.reject(res);
         }
